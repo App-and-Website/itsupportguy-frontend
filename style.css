@@ -1,0 +1,275 @@
+
+
+.button_new{
+padding: 6px 22px;
+background: #136a33;
+border: 2px solid #fff;
+font-weight: 500;
+}
+.button_new:hover{
+    background: #1a8842!important;
+    }
+.topbar_area{
+    padding: 6px!important;
+    background: #f97b26;
+}
+.topbar_area a{
+    font-weight: 500;
+    margin-left: 5px!important;
+}
+.phone_topbar{
+    display: none;
+}
+.header_phone_icon{
+    display: none;
+}
+@media (max-width: 992px){
+    .list_md_sm_hide{
+      display: none;
+    }
+    .phone_topbar{
+        display: flex;
+    }
+    .phone_topbar a{
+        display: flex;
+        align-items: center;
+    }
+    .phone_topbar i{
+        color: #fff;
+        font-size: 24px;
+        margin-right: 10px;
+    } 
+    .navbar_header{
+        position: relative;
+    }
+    .header_phone_icon{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 30px;
+        background: #dde6e0;
+        border-radius: 100%;
+    }
+    .header_phone_icon i{
+        height: 45px;
+        width: 45px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        color: #1a8842;
+        transform: rotate(-30deg);
+        animation: zoomInOut 3s infinite ease-in-out;
+    }
+    @keyframes zoomInOut {
+        0%, 100% {
+            transform: scale(1) rotate(-30deg);
+        }
+        50% {
+            transform: scale(1.2) rotate(-30deg);
+        }
+    }
+    
+    .topbar_button_right{
+        justify-content: flex-end!important;
+    }
+    .banner_appointment{
+        padding-left: 10px!important;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+     .banner-area.auto-height .content{
+        padding: 80px 0;
+     }
+     .banner_appointment{
+        margin-top: 60px;
+     }
+}
+
+
+.logo_custom img{
+   max-height: 60px;
+   width: auto;
+   object-fit: cover;
+}
+.navbar_main a.active{
+    color: #1a8842!important;
+}
+.navbar_main a:hover{
+    color: #1a8842!important;
+}
+.header_phone i{
+    color: #f47b28!important;  
+}
+@media (min-width: 1024px){
+nav.navbar.bootsnav ul.nav > li > a{
+  font-size: 14px;
+}
+}
+
+
+.banner_btns{
+    padding: 10px 22px;
+    margin-right: 20px;
+}
+.button_banner1{
+    background: #1a8842!important;
+    border: 2px solid #1a8842!important;
+}
+.button_banner1:hover{
+    background: #0f6930!important;
+    border: 2px solid #1a8842!important;
+}
+.button_banner2{
+    background: #f47b28!important;
+    border: 2px solid #f47b28!important;
+}
+.button_banner2:hover{
+    background: #db691d!important;
+    border: 2px solid #f47b28!important;
+}
+.banner_content h4{
+    color: #1a8842;
+    font-weight: 600;
+    font-size: 24px;
+}
+.banner-area.text-color .content h2 strong {
+    font-weight: 800;
+    color: #1a8842;
+}
+.banner_appointment{
+    padding-left: 50px;
+}
+.banner_quick_contact{
+    padding: 40px 32px!important;
+    border-radius: 4px;
+}
+.banner_quick_contact{
+    background: #f47b28!important;
+}
+.banner_quick_contact input{
+    background: #fff!important;
+    padding-left: 12px!important;
+    border-radius: 4px!important;
+}
+.banner_quick_contact .nice-select{
+    background: #fff!important;
+    padding-left: 12px!important;
+    border-radius: 4px!important;
+}
+.submit_button button{
+    width: 100%;
+    border-radius: 4px!important;
+    padding: 8px 0!important;
+    border: 2px solid #1a8842!important;
+    background: #1a8842!important;
+    color: #fff;
+    font-weight: 600;
+}
+.submit_button button:hover{
+    background: #0f6930!important;
+    border: 2px solid #1a8842!important;
+}
+@media (max-width: 768px){
+    .banner_thumb img{
+       display: none;
+    }
+
+}
+
+
+.section_heading h5{
+   color: #1a8842;
+}
+.section_heading h4{
+    color: #1a8842;
+ }
+.section_heading h5::after{
+    background: #1a8842;
+}
+.section_heading h2{
+    color: #1a8842;
+ }
+ .section_heading h2::before{
+    background: #1a8842;
+ }
+ .section_heading h2::after{
+    background: #1a8842;
+ }
+ @media (max-width: 768px){
+    .banner_appointment{
+        margin-top: 40px;
+     }
+}
+.why_choose_area .item > i{
+    color: #f97b26;
+}
+.service_area .services-items .item .icon>i{
+    color: #f97b26;
+}
+
+
+.project_card_content{
+    text-align: center;
+}
+.project_card_content h2{
+    font-size: 62px;
+    font-weight: 700;
+    color: #f97b26;
+}
+
+
+.contact_home_img img{
+  border-radius: 6px;
+  border: 4px solid #f97b26;
+}
+.footer_logo img{
+    max-height: 76px;
+    object-fit: cover;
+}
+.footer_logo p{
+    color: #666679;
+    font-weight: 600;
+}
+.footer_bottom p{
+    color: #1a8842;
+}
+.footer_bottom p a{
+    color: #1a8842!important;
+}
+.footer_social ul{
+    display: flex;
+}
+.footer_social ul li a i{
+    height: 40px!important;
+    width: 40px!important;
+    border-radius: 100%;
+    background: #f97b26;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_social ul li a i:hover{
+    background: #1a8842;
+}
+.footer_container .widget-title{
+    color: #1a8842;
+}
+.footer_anchors span{
+    color: #666679;
+    font-weight: 600;
+}
+.footer_anchors a{
+    color: #666679;
+    font-weight: 600;
+}
+.footer_anchors a:hover{
+    color: #1a8842;
+}
+
+
+
