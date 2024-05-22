@@ -4208,7 +4208,7 @@ body,
     z-index: 1;
     border-radius: 5px;
     box-shadow: 0 0 10px #ccc;
-    background: #ffffff;
+    background: #ffffff;W
 }
 
 .services-area .services-items .item::after {
@@ -4334,7 +4334,7 @@ body,
     background: #fff;
     position: relative;
     z-index: 1;
-    border: 2px solid #e7e7e7;
+    border: 2px solid #f97b26;
 }
 
 .services-area .services-items.services-carousel.owl-carousel .owl-dot.active span::after {
@@ -4342,8 +4342,8 @@ body,
     left: 50%;
     top: 50%;
     content: "";
-    height: 5px;
-    width: 5px;
+    height: 8px;
+    width: 8px;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
@@ -5824,6 +5824,7 @@ body,
   padding: 50px 30px;
   background: #ffffff;
   box-shadow: 0 0 10px #cccccc;
+  border: 2px solid #f97b26;
 }
 
 .testimonials-area .item p {
@@ -5840,8 +5841,8 @@ body,
 
 .testimonials-area .thumb i {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -10px;
+  top: -20px;
   display: inline-block;
   height: 45px;
   width: 44px;
@@ -5880,7 +5881,7 @@ body,
   color: #ffb944;
 }
 
-.testimonials-area .item::before {
+/* .testimonials-area .item::before {
   position: absolute;
   left: -15px;
   top: 15px;
@@ -5890,7 +5891,7 @@ body,
   border: 15px solid #1a8842;
   z-index: -1;
   opacity: 0.1;
-}
+} */
 
 .testimonials-area .testimonial-items .owl-stage-outer {
   padding: 30px;
@@ -5917,7 +5918,7 @@ body,
   background: #ffffff;
   position: relative;
   z-index: 1;
-  border: 2px solid #e7e7e7;
+  border: 2px solid #f97b26;
 }
 
 .testimonials-area .testimonial-items .owl-carousel .owl-dots .owl-dot.active span::after {
@@ -5925,14 +5926,14 @@ body,
   left: 50%;
   top: 50%;
   content: "";
-  height: 5px;
-  width: 5px;
+  height: 8px;
+  width: 8px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  background: #437eeb;
+  background: #136a33;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;

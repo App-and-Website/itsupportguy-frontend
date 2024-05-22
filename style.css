@@ -219,7 +219,12 @@ nav.navbar.bootsnav ul.nav > li > a{
     font-weight: 700;
     color: #f97b26;
 }
-
+.project_card_content h5{
+    font-size: 18px;
+}
+.work_process_home h5{
+    font-size: 18px;
+}
 
 .contact_home_img img{
   border-radius: 6px;
@@ -271,5 +276,86 @@ nav.navbar.bootsnav ul.nav > li > a{
     color: #1a8842;
 }
 
+
+.brand_home_content p{
+    margin-top: 6px;
+    line-height: 22px;
+}
+.brands_area .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.testimonial_area{
+    margin-top: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.ratinganddesignation .wrap{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.testimonial_thumb{
+    height: 100px!important;
+    width: 100px!important;
+}
+.testimonial_thumb img{
+    height: 100px!important;
+    width: 100px!important;
+}
+.testi_header{
+    display: flex;
+}
+.testi_header .wrap{
+    display: grid!important;
+}
+.testi_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testi_main p{
+    text-align: center;
+}
+
+
+.free_quote_container{
+   background: #f07421;
+   border-radius: 12px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+.free_quote_main{
+    background: #f07421!important;
+}
+.free_quote_container .section_left{
+    padding-left: 60px;
+}
+.free_quote_container .section_left h2{
+    color: #fff;
+    font-size: 42px;
+}
+.free_quote_container .section_left p{
+    color: #eeecec;
+    font-weight: 500;
+}
+@media (max-width: 992px){
+    .free_quote_container .banner_appointment{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px){
+    .free_quote_container .section_left{
+        padding-left: 40px;
+    }
+}
+@media (max-width: 576px){
+    .free_quote_container .section_left{
+        padding-left: 10px;
+    }
+    .free_quote_container .banner_quick_contact{
+        padding: 0px!important;
+    }
+}
 
 

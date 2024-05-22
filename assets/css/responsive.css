@@ -366,7 +366,7 @@
     display: none;
   }
 
-  .testimonials-area .thumb {
+  /* .testimonials-area .thumb {
     position: relative;
     z-index: 1;
     height: 200px;
@@ -380,7 +380,7 @@
 
   .testimonials-area .item .provider {
     justify-content: center;
-  }
+  } */
 
   /* Faq Area */
   .faq-area .faq-content {
@@ -1066,7 +1066,7 @@
     display: none;
   }
 
-  .testimonials-area .thumb {
+  /* .testimonials-area .thumb {
     position: relative;
     z-index: 1;
     height: 200px;
@@ -1080,7 +1080,7 @@
 
   .testimonials-area .item .provider {
     justify-content: center;
-  }
+  } */
 
   /* Case Area  */
   .case-studies-area.grid-items .case-items.colums-2 .pf-item,
@@ -1532,10 +1532,10 @@
   .testimonials-area .item::before {
     display: none;
   }
-
+/* 
   .testimonials-area .thumb i {
     right: 45px;
-  }
+  } */
 
   .testimonial-items .item > .row {
     align-items: center;
