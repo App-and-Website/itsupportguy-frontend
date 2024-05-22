@@ -47,18 +47,18 @@ font-weight: 500;
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        right: 30px;
+        right: 10px;
         background: #dde6e0;
         border-radius: 100%;
     }
     .header_phone_icon i{
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 28px;
+        font-size: 24px;
         color: #1a8842;
         transform: rotate(-30deg);
         animation: zoomInOut 3s infinite ease-in-out;
