@@ -361,7 +361,7 @@ nav.navbar.bootsnav ul.nav > li > a{
 
 .free_quote_fixed{
     position: fixed;
-    top: 75%;
+    top: 70%;
     left: -60px;
     z-index: 100;
     transform: rotate(270deg);
