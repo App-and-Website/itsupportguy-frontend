@@ -359,3 +359,141 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 
 
+.free_quote_fixed{
+    position: fixed;
+    top: 60%;
+    left: -60px;
+    z-index: 100;
+    transform: rotate(270deg);
+}
+.button_fiexed_left{
+    border-radius: 0px!important;
+    border-bottom-left-radius: 12px!important;
+    border-bottom-right-radius: 12px!important;
+    padding: 14px 28px 5px 14px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hide_left_fixed{
+    position: relative;
+    cursor: pointer;
+}
+.hide_left_fixed i{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -25px;
+    bottom: -10px;
+    background: #fff;
+    border: 2px solid #1a8842;
+    border-radius: 100%;
+    color: #f97b26;
+    font-size: 20px;
+    transform: rotate(-270deg);
+    animation: shake 1s infinite ease-in-out;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(-270deg) translateX(0);
+    }
+    25% {
+        transform: rotate(-270deg) translateX(-3px);
+    }
+    50% {
+        transform: rotate(-270deg) translateX(3px);
+    }
+    75% {
+        transform: rotate(-270deg) translateX(-3px);
+    }
+}
+
+
+/* ========================== popup css starts =========================== */
+.popUpMain {
+    position: fixed;
+    z-index: 101; /* Ensure it is above the overlay */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    display: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.popUp_row {
+    display: flex;
+    justify-content: center;
+}
+.popUp_wrapper {
+    background: #f47b28;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+.closePopUp {
+    position: absolute;
+    right: 0px;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #e3494e;
+}
+.popUp_image img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+.popUp_form {
+    padding: 30px;
+}
+.pop_Up_head h3 {
+    font-weight: 600;
+    margin-left: -10px;
+}
+.poUpFormBox form input {
+    /* min-height: 40px!important; */
+    font-size: 14px;
+}
+.poUpFormBox form textarea {
+    font-size: 14px;
+}
+.poUpFormBox .form_field {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* .poUpFormBox .form-group {
+    margin-bottom: 10px;
+}
+.popUp_submit_btn button {
+   padding-top: 4px!important;
+   padding-bottom: 4px!important;
+} */
+.overlayPopUp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+@media (max-width: 768px){
+    .popUp_image{
+        display: none;
+    }
+    .popUp_wrapper {
+        grid-template-columns: 100%;
+    }
+}
+/* ========================== popup css ends =========================== */

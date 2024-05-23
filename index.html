@@ -28,7 +28,7 @@
 </head>
 
 <body>
-
+     
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
@@ -137,6 +137,74 @@
     </header>
     <!-- End Header -->
 
+
+    <!-- Left Fixed Quick Enquiry Button and PopUp Starts  
+    ============================================= -->
+    <div class="free_quote_fixed d-flex popUpOpen">
+        <div class="btn circle btn-theme effect btn-md wow fadeInUp button_fiexed_left" href="#">Quick Enquiry</div>
+        <div class="hide_left_fixed">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+    </div>
+
+    <div class="overlayPopUp"></div>
+
+    <section class="popUpMain w-100">
+     <div class="container">
+        <div class="row popUp_row">
+            <div class="col-lg-10">
+                <div class="popUp_wrapper">
+                    <div class="closePopUp">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="popUp_image">
+                      <img src="assets/img/images/3 (1).jpg" alt="">
+                    </div>
+                    <div class="popUp_form">
+                        <div class="appoinment-box text-center poUpFormBox">
+                            <div class="heading pop_Up_head">
+                                <h3 class="text-white text-left">Let's Discuss:</h3>
+                            </div>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6 form_field">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Full Name*" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 form_field">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Phone*" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 form_field">
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 form_field">
+                                        <div class="form-group select_box">
+                                            <textarea class="form-control" name="message" placeholder="Share Your Requirements" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 submit_button form_field popUp_submit_btn">
+                                        <button type="submit" name="submit" id="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+     <!-- Left Fixed Quick Enquiry Button and PopUp Ends  
+    ============================================= -->
+
+
    <!-- Start Banner 
     ============================================= -->
     <div class="banner-area auto-height text-color bg-gray inc-shape">
@@ -166,7 +234,7 @@
     </div>
     <!-- End Banner -->
 
-
+   
     <!-- Start WE ARE IT SUPPORT GUY 
     ============================================= -->
     <div class="features-area overflow-hidden bg-gray default-padding" style="background: #fff;">
@@ -1144,6 +1212,43 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- jQuery to hide and show popUp -->
+    <script>
+        $(document).ready(function() {
+            $('.popUpOpen').click(function() {
+                $('.overlayPopUp').show().css('opacity', '1');
+                $('.popUpMain').css({'display': 'block'});
+                
+                // Use a small timeout to allow the display change to take effect
+                setTimeout(function() {
+                    $('.popUpMain').css({'opacity': '1', 'transform': 'translate(-50%, -50%) scale(1)'});
+                }, 10); // Small delay to trigger the transition
+        
+                $('body').css('overflow', 'hidden');
+                $('.overlayPopUp').on('click', function(event) {
+                    event.stopPropagation();
+                });
+                $(document).on('click', function(event) {
+                    if (!$(event.target).closest('.popUpMain').length) {
+                        event.preventDefault();
+                        event.stopImmediatePropagation();
+                    }
+                });
+            });
+        
+            $('.closePopUp').click(function() {
+                $('.overlayPopUp').css('opacity', '0').one('transitionend', function() {
+                    $(this).hide();
+                });
+                $('.popUpMain').css({'opacity': '0', 'transform': 'translate(-50%, -50%) scale(0.8)'}).one('transitionend', function() {
+                    $(this).hide();
+                });
+                $('body').css('overflow', 'auto');
+                $(document).off('click');
+            });
+        });
+        </script>
 
 </body>
 </html>

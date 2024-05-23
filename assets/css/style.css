@@ -4208,7 +4208,7 @@ body,
     z-index: 1;
     border-radius: 5px;
     box-shadow: 0 0 10px #ccc;
-    background: #ffffff;W
+    background: #ffffff;
 }
 
 .services-area .services-items .item::after {
@@ -4218,7 +4218,7 @@ body,
     content: "";
     height: 50%;
     width: 100%;
-    background: linear-gradient(90deg,rgb(25, 131, 64) 0%,rgba(1, 74, 28,1) 40%);
+    background: linear-gradient(90deg,rgb(41, 172, 89) 0%,rgb(32, 151, 76) 40%);
     transition: all .35s ease-in-out;
     opacity: 0;
     z-index: -1;
