@@ -1219,24 +1219,15 @@
             $('.popUpOpen').click(function() {
                 $('.overlayPopUp').show().css('opacity', '1');
                 $('.popUpMain').css({'display': 'block'});
-                
+
                 // Use a small timeout to allow the display change to take effect
                 setTimeout(function() {
                     $('.popUpMain').css({'opacity': '1', 'transform': 'translate(-50%, -50%) scale(1)'});
                 }, 10); // Small delay to trigger the transition
-        
+
                 $('body').css('overflow', 'hidden');
-                $('.overlayPopUp').on('click', function(event) {
-                    event.stopPropagation();
-                });
-                $(document).on('click', function(event) {
-                    if (!$(event.target).closest('.popUpMain').length) {
-                        event.preventDefault();
-                        event.stopImmediatePropagation();
-                    }
-                });
             });
-        
+
             $('.closePopUp').click(function() {
                 $('.overlayPopUp').css('opacity', '0').one('transitionend', function() {
                     $(this).hide();
@@ -1244,11 +1235,17 @@
                 $('.popUpMain').css({'opacity': '0', 'transform': 'translate(-50%, -50%) scale(0.8)'}).one('transitionend', function() {
                     $(this).hide();
                 });
+
                 $('body').css('overflow', 'auto');
-                $(document).off('click');
+            });
+
+            $('.overlayPopUp').on('click', function(event) {
+                if (!$(event.target).closest('.popUpMain').length) {
+                    $('.closePopUp').click(); // Close the popup if clicked outside of it
+                }
             });
         });
-        </script>
+    </script>
 
 </body>
 </html>
