@@ -244,6 +244,9 @@ nav.navbar.bootsnav ul.nav > li > a{
 .footer_bottom p a{
     color: #1a8842!important;
 }
+.footer_bottom p a:hover{
+    color: #2ead5d!important;
+}
 .footer_social ul{
     display: flex;
 }
@@ -498,3 +501,184 @@ nav.navbar.bootsnav ul.nav > li > a{
     }
 }
 /* ========================== popup css ends =========================== */
+
+
+
+.breadcrumb_main{
+    background-position: center;
+    background-size: cover!important;
+    padding: 100px 0;
+}
+.breadcrumb_row{
+    display: flex;
+    justify-content: center;
+}
+.breadcrumb_content{
+    width: 72%;
+    text-align: center;
+}
+.breadcrumb_content .breadcrumb_title h1{
+    font-weight: 600;
+    font-size: 56px;
+    color: #f47b28;
+}
+.breadcrumb_content p{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media (max-width: 992px){
+    .breadcrumb_content{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .breadcrumb_content .breadcrumb_title h1{
+        font-size: 36px;
+        padding: 0 5px;
+    }
+    .breadcrumb_content p{
+        font-size: 16px;
+        padding: 0 5px;
+    }
+}
+@media (max-width: 480px){
+    .breadcrumb_content .breadcrumb_title h1{
+        font-size: 32px;
+    }
+    .breadcrumb_main{
+        padding: 60px 0;
+    }
+    .breadcrumb_content .button_banner1{
+        margin-bottom: 20px;
+    }
+}
+
+
+.mission_vision_container{
+    background: #f07421;
+    border-radius: 12px;
+    padding: 60px;
+}
+.mission_vision_container h2, .mission_vision_container h4{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.mission_vision_container p{
+    color: #f3f7fd;
+}
+.mission_vision_container .mission_vision_image{
+    height: 260px;
+    width: 100%;
+}
+.mission_vision_container .mission_vision_image img{
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 4px solid #f3f7fd;
+    border-radius: 6px;
+}
+@media (max-width: 576px){
+    .mission_vision_container{
+        padding: 60px 10px;
+    }
+}
+
+
+.contact_page_map iframe{
+    height: 420px;
+    width: 100%;
+    border: 6px solid #f8f8f8!important;
+    box-shadow: 2px 2px 8px #ccc;
+}
+.contact_page_heading p{
+    font-size: 24px;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.contact_page_contact a{
+    font-weight: 500;
+    color: #666679;
+}
+.contact_page_contact i{
+    color: #f07421!important;
+}
+.contact_page_contact h5{
+    color: #666679;
+    font-weight: 600;
+}
+.social_contact_page ul li i{
+    line-height: 16px!important;
+    font-size: 18px!important;
+}
+.social_contact_page ul li{
+    display: block!important;
+}
+.social_contact_page ul li a:hover i{
+    color: #fff!important;
+}
+.form_box_contact_page{
+    background: #f07421;
+    padding: 60px 25px;
+    border-radius: 12px;
+}
+.cta_contact_page{
+    border-radius: 12px;
+}
+.faq_contact_page .card{
+    background: #f3f7fd!important;
+    padding: 20px!important;
+}
+.cta_contact_page p{
+    margin-top: 16px;
+    width: 50%;
+}
+@media (max-width: 992px){
+    .cta_contact_page p{
+        width: 100%;
+    }
+    .cta_contact_page{
+        padding: 50px 10px;
+    }
+}
+
+.partner_item .item{
+   border-radius: 4px;
+   padding: 20px!important;
+}
+.partner_item h4{
+    margin-top: 20px;
+}
+.partner_item p{
+    margin-top: -20px;
+}
+.partner_item a{
+    color: #f07421;
+}
+.partner_item a i{
+    font-size: 12px;
+}
+.partner_item a:hover{
+    color: #136a33;
+}
+.partner_item .image_partner{
+    height: 80px;
+    padding: 10px;
+    background: #f3f7fd;
+    border-radius: 4px;
+}
+.partner_item .image_partner img{
+    height: 100%;
+    object-fit: contain;
+}
+.footer_bottom a{
+    color: #136a33;
+}
+.footer_bottom a:hover{
+    color: #239b4f;
+}
+
