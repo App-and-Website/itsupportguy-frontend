@@ -702,3 +702,23 @@ nav.navbar.bootsnav ul.nav > li > a{
         color: #f98838 !important;
     }
 }
+
+.blog_single_social i{
+    color: #fff;
+}
+.blog_details_content h1{
+    font-size: 32px;
+}
+@media only screen and (max-width: 992px){
+    .blog_single_social{
+         display: none;
+    }
+    .blog_details_content{
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .blog_details_content h1{
+        font-size: 24px;
+    }
+}
