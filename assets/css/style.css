@@ -4588,7 +4588,7 @@ body,
   content: "";
   height: 100%;
   width: 100%;
-  background: #f98838;
+  /* background: #f98838; */
   z-index: -1;
   opacity: 0.1;
   transition: all 0.35s ease-in-out;
@@ -4605,10 +4605,10 @@ body,
 }
 
 .services-area .services-tabs .tab-pane {
-  background: #f3f7fd;
+  /* background: #f3f7fd; */
   position: relative;
   z-index: 1;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .services-area .services-tabs .info .content {
@@ -4623,7 +4623,7 @@ body,
   content: "";
   height: 100%;
   width: 90%;
-  background: #f3f7fd;
+  /* background: #f3f7fd; */
   z-index: -1;
 }
 
