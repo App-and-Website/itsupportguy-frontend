@@ -536,7 +536,6 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 .breadcrumb_content p{
     font-weight: 500;
-    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -949,4 +948,11 @@ nav.navbar.bootsnav ul.nav > li > a{
     .service_main_page_about .icon i{
         font-size: 20px!important;
      }
+}
+
+.servicePage_services h4{
+    font-size: 20px;
+}
+.service_page_types h4{
+    font-size: 20px;
 }
