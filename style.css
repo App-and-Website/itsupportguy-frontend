@@ -901,3 +901,52 @@ nav.navbar.bootsnav ul.nav > li > a{
         font-size: 14px;
     }
 }
+
+
+.service_main_page_about .info ul li i{
+    font-size: 28px;
+}
+.service_main_page_about .thumb img:first-child{
+    width: 100%;
+}
+.service_main_page_about .thumb .overlay {
+    position: absolute;
+    left: -100px;
+    top: 80%;
+    height: 120px;
+    width: 250px;
+    text-align: center;
+    background: #f98838;
+    transform: translate(50px, -50%);
+    border-radius: 8px;
+}
+.service_main_page_about .content h4{
+    color: #fff;
+}
+.service_main_page_about .content .big{
+    font-size: 42px;
+}
+
+@media only screen and (max-width: 992px) {
+    .service_main_page_about .thumb img:first-child{
+        margin-top: 40px;
+    }
+    .margin_small_reduce{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .service_main_page_about .info ul li {
+        display: flex;
+    }
+    .service_main_page_about .info{
+        text-align: left;
+    }
+    .service_main_page_about .icon{
+       margin-right: 10px;
+    }
+    .service_main_page_about .icon i{
+        font-size: 20px!important;
+     }
+}

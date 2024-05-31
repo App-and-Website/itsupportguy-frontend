@@ -4505,7 +4505,7 @@ body,
 .service-area .service-items .item .info > i {
   display: inline-block;
   font-size: 70px;
-  background: linear-gradient(90deg, rgba(3,25,65,1) 0%, rgba(67,126,235,1) 100%);
+  background: linear-gradient(90deg, rgba(174, 95, 39,1) 0%, rgba(249, 136, 56,1) 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
